@@ -1,10 +1,38 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 
+const SpanWhite = styled("span")`
+  > h1 {
+    color: ${({ theme }) => theme.palette.primary.light};
+  }
+  > h2 {
+    color: ${({ theme }) => theme.palette.primary.light};
+  }
+  > h3 {
+    color: ${({ theme }) => theme.palette.primary.light};
+  }
+  > h4 {
+    color: ${({ theme }) => theme.palette.primary.light};
+  }
+`;
+const SpanBlack = styled("span")`
+  > h1 {
+    color: ${({ theme }) => theme.palette.primary.dark};
+  }
+  > h2 {
+    color: ${({ theme }) => theme.palette.primary.dark};
+  }
+  > h3 {
+    color: ${({ theme }) => theme.palette.primary.dark};
+  }
+  > h4 {
+    color: ${({ theme }) => theme.palette.primary.dark};
+  }
+`;
 const TT1 = styled("h1")`
   color: ${({ theme }) => theme.palette.primary.main};
   text-transform: uppercase;
-  font-size: ${({ theme }) => theme.typography.h1.fontSize};
+  font-size: 5em;
   text-align: center;
   align-items: center;
   margin: 0;
@@ -13,6 +41,7 @@ const TT1 = styled("h1")`
 
 const TT2 = styled("h2")`
   color: white;
+  font-size: ${({ theme }) => theme.typography.h3.fontSize};
   text-transform: uppercase;
   text-align: center;
   align-items: center;
@@ -22,6 +51,7 @@ const TT2 = styled("h2")`
 
 const TT3 = styled("h3")`
   color: white;
+  font-size: ${({ theme }) => theme.typography.h4.fontSize};
   text-transform: uppercase;
   text-align: center;
   align-items: center;
@@ -31,7 +61,8 @@ const TT3 = styled("h3")`
 
 const TT4 = styled("h4")`
   color: white;
-  text-transform: uppercase;
+  font-size: ${({ theme }) => theme.typography.h6.fontSize};
+  font-weight: 300;
   text-align: center;
   align-items: center;
   margin: 0;
@@ -58,34 +89,66 @@ interface TittleProps {
   h4?: string;
 }
 
-export const H1: React.FC<TittleProps> = (props) => {
+export const H1White: React.FC<TittleProps> = (props) => {
   return (
-    //<DivTittle>
-    <TT1>{props.children}</TT1>
-    //</DivTittle>
+    <SpanWhite>
+      <TT1>{props.children}</TT1>
+    </SpanWhite>
   );
 };
 
-export const H2: React.FC<TittleProps> = (props) => {
+export const H2White: React.FC<TittleProps> = (props) => {
   return (
-    //<DivTittle>
-    <TT2>{props.children}</TT2>
-    //</DivTittle>
+    <SpanWhite>
+      <TT2>{props.children}</TT2>
+    </SpanWhite>
   );
 };
 
-export const H3: React.FC<TittleProps> = (props) => {
+export const H3White: React.FC<TittleProps> = (props) => {
   return (
-    //<DivTittle>
-    <TT3>{props.children}</TT3>
-    //</DivTittle>
+    <SpanWhite>
+      <TT3>{props.children}</TT3>
+    </SpanWhite>
   );
 };
 
-export const H4: React.FC<TittleProps> = (props) => {
+export const H4White: React.FC<TittleProps> = (props) => {
   return (
-    //<DivTittle>
-    <TT4>{props.children}</TT4>
-    //</DivTittle>
+    <SpanBlack>
+      <TT4>{props.children}</TT4>
+    </SpanBlack>
+  );
+};
+
+export const H1Black: React.FC<TittleProps> = (props) => {
+  return (
+    <SpanBlack>
+      <TT1>{props.children}</TT1>
+    </SpanBlack>
+  );
+};
+
+export const H2Black: React.FC<TittleProps> = (props) => {
+  return (
+    <SpanBlack>
+      <TT2>{props.children}</TT2>
+    </SpanBlack>
+  );
+};
+
+export const H3Black: React.FC<TittleProps> = (props) => {
+  return (
+    <SpanBlack>
+      <TT3>{props.children}</TT3>
+    </SpanBlack>
+  );
+};
+
+export const H4Black: React.FC<TittleProps> = (props) => {
+  return (
+    <SpanBlack>
+      <TT4>{props.children}</TT4>
+    </SpanBlack>
   );
 };

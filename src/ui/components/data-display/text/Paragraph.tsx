@@ -1,22 +1,41 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 
-const P = styled("p")`
-  color: black;
-  text-transform: uppercase;
-  font-size: 1em;
+const P1 = styled("p")`
+  font-size: 1.5em;
   text-align: center;
   align-items: center;
+  color: ${({ theme }) => theme.palette.primary.light};
+
+  > .black {
+    color: ${({ theme }) => theme.palette.primary.dark};
+  }
+`;
+
+const P2 = styled("p")`
+  font-size: 1.8em;
+  text-align: center;
+  align-items: center;
+
+  color: ${({ theme }) => theme.palette.primary.dark};
 `;
 
 interface ParagraphProps {
   text?: string;
 }
 
-export const Paragraph: React.FC<ParagraphProps> = (props) => {
+export const ParagraphWhite: React.FC<ParagraphProps> = (props) => {
   return (
     //<DivParagraph>
-    <P>{props.children}</P>
+    <P1>{props.children}</P1>
+    //</DivParagraph>
+  );
+};
+
+export const ParagraphBlack: React.FC<ParagraphProps> = (props) => {
+  return (
+    //<DivParagraph>
+    <P2>{props.children}</P2>
     //</DivParagraph>
   );
 };

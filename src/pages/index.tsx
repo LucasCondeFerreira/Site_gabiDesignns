@@ -2,13 +2,23 @@ import type { NextPage } from "next";
 import Range from "@components/esthetic/range/Range";
 import Header from "@components/surface/header/Header";
 import SectionHome from "@components/surface/sectionHome/SectionHome";
+import { SectionIcon } from "@components/surface/SectionIcon/SectionIcon";
+import {
+  SectionTextoUm,
+  SectionTextoDois,
+  SectionTextoTres,
+} from "@components/surface/SectionText/SectionText";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Range text={"Um texto para experimentação"} />
+      <Range />
       <Header />
       <SectionHome />
+      <SectionTextoUm />
+      <SectionTextoDois />
+      <SectionTextoTres />
+      <SectionIcon />
       <Range />
     </div>
   );

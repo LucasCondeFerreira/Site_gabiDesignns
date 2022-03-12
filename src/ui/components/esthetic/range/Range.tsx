@@ -1,6 +1,5 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
-import { Container } from "@mui/material";
 
 const Text = styled("h3")`
   color: ${({ theme }) => theme.palette.primary.light};
@@ -13,7 +12,7 @@ const Text = styled("h3")`
 `;
 
 const DivRange = styled("div")`
-  background-color: ${({ theme }) => theme.palette.primary.dark};
+  background-color: ${({ theme }) => theme.palette.primary.main};
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
