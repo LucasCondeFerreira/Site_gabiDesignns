@@ -5,7 +5,7 @@ import { H2Black, H4Black } from "@components/data-display/text/Tittle";
 const DivIcones = styled("div")`
   display: flex;
   flex-direction: column;
-
+  padding: 0 20px;
   width: 340px;
   height: 120px;
 
@@ -48,8 +48,9 @@ const DivIcones = styled("div")`
   }
 `;
 const ImgIcone = styled("img")`
-  max-width: 90px;
-  max-height: 90px;
+  max-width: 190px;
+  max-height: 190px;
+  margin-bottom: 1rem;
 `;
 
 interface IconProps {

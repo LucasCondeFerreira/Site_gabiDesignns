@@ -10,8 +10,8 @@ const DivHome = styled("div")`
 
   min-height: 820px;
 
-  background-image: url("/images/background.JPG");
-  background-color: ${({ theme }) => theme.palette.secondary.dark};
+  background-image: url("/images/background-um.png");
+  background-color: ${({ theme }) => theme.palette.primary.light};
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

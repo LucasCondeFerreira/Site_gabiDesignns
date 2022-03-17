@@ -3,8 +3,8 @@ import { styled } from "@mui/material/styles";
 
 const P1 = styled("p")`
   font-size: 1.5em;
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: left;
   color: ${({ theme }) => theme.palette.primary.light};
 
   > .black {
@@ -14,8 +14,8 @@ const P1 = styled("p")`
 
 const P2 = styled("p")`
   font-size: 1.8em;
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: left;
 
   color: ${({ theme }) => theme.palette.primary.dark};
 `;

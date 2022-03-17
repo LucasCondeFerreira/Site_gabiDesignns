@@ -12,7 +12,7 @@ const Div = styled("div")`
   margin: 0 auto;
   padding: 10rem 0 0;
 
-  background-color: ${({ theme }) => theme.palette.secondary.dark};
+  background-color: ${({ theme }) => theme.palette.primary.light};
   background-size: contain;
   background-position: top left;
   background-repeat: no-repeat;
@@ -32,17 +32,17 @@ export const SectionIcon = () => {
     <Div>
       <DivContain>
         <Icon
-          src={"/images/logoGabi.png"}
+          src={"/images/icone-teste.png"}
           alt={"imagem de design"}
           text={"Criação de identidade visual, com muita estrategia."}
         />
         <Icon
-          src={"/images/logoGabi.png"}
+          src={"/images/icone-teste.png"}
           alt={"imagem de design"}
           text={"Estilo unico e identidade visual memorável."}
         />
         <Icon
-          src={"/images/logoGabi.png"}
+          src={"/images/icone-teste.png"}
           alt={"imagem de design"}
           text={"Profissional disponivel durante a criação do seu branding."}
         />

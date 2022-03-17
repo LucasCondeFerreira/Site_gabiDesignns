@@ -30,10 +30,8 @@ const SpanBlack = styled("span")`
   }
 `;
 const TT1 = styled("h1")`
-  color: ${({ theme }) => theme.palette.primary.main};
   text-transform: uppercase;
   font-size: 5em;
-  text-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -43,7 +41,6 @@ const TT2 = styled("h2")`
   color: white;
   font-size: ${({ theme }) => theme.typography.h3.fontSize};
   text-transform: uppercase;
-  text-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -53,7 +50,6 @@ const TT3 = styled("h3")`
   color: white;
   font-size: ${({ theme }) => theme.typography.h4.fontSize};
   text-transform: uppercase;
-  text-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -61,9 +57,8 @@ const TT3 = styled("h3")`
 
 const TT4 = styled("h4")`
   color: white;
-  font-size: ${({ theme }) => theme.typography.h6.fontSize};
-  font-weight: 300;
-  text-align: center;
+  font-size: ${({ theme }) => theme.typography.h5.fontSize};
+  font-weight: 400;
   align-items: center;
   margin: 0;
   padding: 0;
