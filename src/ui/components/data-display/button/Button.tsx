@@ -115,6 +115,8 @@ const DivButtonTres = styled("a")`
   @media (max-width: 560px) {
     width: 240px;
     height: 65px;
+    top: 2rem;
+    right: 78%;
   }
 
   :hover {

@@ -16,6 +16,9 @@ const DivUm = styled("div")`
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
@@ -28,6 +31,9 @@ const DivDois = styled("div")`
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   flex-direction: row-reverse;
   max-width: 100%;
   width: 100%;
@@ -40,6 +46,9 @@ const DivTres = styled("div")`
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
@@ -55,10 +64,16 @@ const DivText2 = styled("div")`
   width: 50%;
   margin: 0;
   min-height: 560px;
-
   padding: 65px 70px;
-
   background: transparent;
+
+  @media (max-width: 560px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+
+    padding: 65px 35px;
+  }
 `;
 
 const DivImgUm = styled("div")`
@@ -70,10 +85,16 @@ const DivImgUm = styled("div")`
   margin: 0;
   min-height: 560px;
 
-  background-image: url(/images/pattern_rosa.JPG);
+  background-image: url(/images/pattern_rosa.svg);
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
+
+  @media (max-width: 560px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 
 const DivImgDois = styled("div")`
@@ -89,6 +110,12 @@ const DivImgDois = styled("div")`
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
+
+  @media (max-width: 560px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 
 const DivImgTres = styled("div")`
@@ -104,6 +131,12 @@ const DivImgTres = styled("div")`
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
+
+  @media (max-width: 560px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
 `;
 
 const DivList = styled("div")`
@@ -122,8 +155,11 @@ const List = styled("ul")`
   flex: 0 0 49, 9999%;
   max-width: 49, 9999%;
   width: 49, 9999%;
-
   list-style-type: none;
+
+  @media (max-width: 560px) {
+    padding-left: 1.3rem;
+  }
 `;
 
 const Paragraph = styled("p")`
@@ -131,6 +167,10 @@ const Paragraph = styled("p")`
   text-align: start;
   align-items: center;
   color: ${({ theme }) => theme.palette.primary.light};
+
+  @media (max-width: 560px) {
+    font-size: 0.9em;
+  }
 `;
 
 const DivContain = styled("div")`

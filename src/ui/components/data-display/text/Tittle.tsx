@@ -35,6 +35,10 @@ const TT1 = styled("h1")`
   align-items: center;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 560px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const TT2 = styled("h2")`

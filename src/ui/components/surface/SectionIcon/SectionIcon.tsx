@@ -16,10 +16,16 @@ const Div = styled("div")`
   background-size: contain;
   background-position: top left;
   background-repeat: no-repeat;
+
+  @media (max-width: 560px) {
+    padding: 4rem 0 0;
+  }
 `;
 
 const DivContain = styled("div")`
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   max-width: 1120px;
