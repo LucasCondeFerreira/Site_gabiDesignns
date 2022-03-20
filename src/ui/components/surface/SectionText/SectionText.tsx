@@ -444,7 +444,7 @@ const DivText6 = styled("div")`
   flex: 0 0 100%;
   max-width: 100%;
   width: 100%;
-  padding: 11rem 0;
+  padding: 11rem 3rem;
 
   background-color: ${({ theme }) => theme.palette.primary.light};
   background-size: contain;
@@ -460,7 +460,7 @@ const DivText6 = styled("div")`
     > span > h1 {
       font-size: 2.8em;
     }
-    padding: 9rem 0 6rem;
+    padding: 9rem 3rem;
   }
 `;
 

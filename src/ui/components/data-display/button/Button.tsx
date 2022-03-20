@@ -62,7 +62,7 @@ const DivButtonDois = styled("a")`
   background: transparent;
 
   @media (max-width: 768px) {
-    width: 60%;
+    width: 65%;
     height: 65px;
   }
 
@@ -72,7 +72,7 @@ const DivButtonDois = styled("a")`
 
   > h4 {
     width: 100%;
-    margin-top: 1.4rem;
+    margin-top: 1.1rem;
 
     font-size: 1.3em;
     color: ${({ theme }) => theme.palette.primary.light};
@@ -111,15 +111,15 @@ const DivButtonTres = styled("a")`
   transform: rotate(-90deg);
   background: transparent;
 
-  @media (max-width: 370px) {
+  @media (max-width: 380px) {
     display: none;
   }
 
-  @media (min-width: 371px) and (max-width: 450px) {
+  @media (min-width: 381px) and (max-width: 450px) {
     width: 240px;
     height: 65px;
     top: 2rem;
-    left: -49%;
+    left: -42%;
   }
 
   @media (min-width: 451px) and (max-width: 560px) {

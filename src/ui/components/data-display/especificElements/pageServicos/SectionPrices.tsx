@@ -72,6 +72,10 @@ const DivText2 = styled("div")`
     width: 100%;
 
     padding: 65px 3rem;
+
+    > span > h2 {
+      font-size: 2em;
+    }
   }
 `;
 
