@@ -34,6 +34,18 @@ const Nav = styled("nav")`
 
   @media (max-width: 768px) {
     justify-content: flex-end;
+
+    > ul.sumir {
+      display: none;
+    }
+  }
+  @media (min-width: 769px) {
+    > ul.list {
+      display: none;
+    }
+    > ul.sumir {
+      width: 100%;
+    }
   }
 `;
 
@@ -98,6 +110,20 @@ export default function Header() {
         <Img src="/images/logoGabi.png" alt="Logo do site de design" />
       </DivImg>
       <Nav>
+        <Ul className="sumir">
+          <li>
+            <A href={"/"}>HOME</A>
+          </li>
+          <li>
+            <A href={"/infos"}>INFOS</A>
+          </li>
+          <li>
+            <A href={"/servicos"}>SERVIÇOS </A>
+          </li>
+          <li>
+            <A href={"/termos"}> TERMOS</A>
+          </li>
+        </Ul>
         <Ul className="list">
           <li>
             <A href={"/"}>HOME</A>
@@ -116,6 +142,11 @@ export default function Header() {
           .list {
             display: ${hamburguerOpen ? "flex" : "none"};
           }
+            @media (max-width: 768px) {
+              .sumir{
+                display:none;
+              }
+            }
         `}</style>
 
         <DivHamburguer onClick={toggleHamburguer}>
