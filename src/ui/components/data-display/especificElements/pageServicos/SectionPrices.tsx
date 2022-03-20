@@ -127,7 +127,7 @@ const DivImgTres = styled("div")`
   margin: 0;
   min-height: 768px;
 
-  background-image: url(/images/mockup_absorv.JPG);
+  background-image: url(/images/BoxMockup.png);
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ export const SectionPrice = () => {
     <>
       <DivUm>
         <DivText2>
-          <H2White>PACOTE INICIO</H2White>
+          <H2White>PACOTE STARTUP</H2White>
           <ParagraphWhite>
             Se você é uma pequena empresa que deseja estabelecer sua marca, este
             pacote é perfeito para você. Ele tem todos os fundamentos que você
@@ -209,21 +209,19 @@ export const SectionPrice = () => {
               </Paragraph>
             </List>
           </DivList>
-          <ButtonUm href="https://google.com" text={"R$169,00"} />
+          <ButtonUm href="#" text={"R$169,00"} />
         </DivText2>
         <DivImgUm />
       </DivUm>
       <DivDois>
         <DivText2>
-          <H2White>
-            BRANDiNG É <br /> MAiS QUE UMA LOGO
-          </H2White>
+          <H2White>PACOTE MICRO-EMPRESA</H2White>
           <ParagraphWhite>
             A marca de uma empresa é mais do que apenas o logotipo. Toda a
             identidade da sua marca faz com que você seja reconhecido e lembrado
-            pelo seu público. Que tudo se soma para criar sua personalidade de
-            negócios única. Vamos fazer sua marca se destacar com nosso Pacote
-            de Branding Premium!
+            pelo seu público. Em que tudo se soma para criar sua personalidade
+            de negócios única. Vamos fazer sua marca se destacar com nosso
+            Pacote de Branding Micro-Empresa!
           </ParagraphWhite>
           <DivList>
             <List>
@@ -244,15 +242,13 @@ export const SectionPrice = () => {
               </Paragraph>
             </List>
           </DivList>
-          <ButtonUm href="https://google.com" text={"R$358,00"} />
+          <ButtonUm href="#" text={"R$358,00"} />
         </DivText2>
         <DivImgDois />
       </DivDois>
       <DivTres>
         <DivText2>
-          <H2White>
-            BRANDiNG É <br /> MAiS QUE UMA LOGO
-          </H2White>
+          <H2White>PACONTE ENTERPRISE</H2White>
           <ParagraphWhite>
             Nossa marca constitui o que somos e o que queremos que a nossa
             empresa seja ou represente dentro do mercado, hoje em dia no mundo
@@ -281,7 +277,7 @@ export const SectionPrice = () => {
               </Paragraph>
             </List>
           </DivList>
-          <ButtonUm href="https://google.com" text={"R$589,00"} />
+          <ButtonUm href="#" text={"R$589,00"} />
         </DivText2>
         <DivImgTres />
       </DivTres>

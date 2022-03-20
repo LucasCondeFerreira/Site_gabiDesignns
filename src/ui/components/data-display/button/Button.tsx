@@ -116,7 +116,7 @@ const DivButtonTres = styled("a")`
     width: 240px;
     height: 65px;
     top: 2rem;
-    right: 78%;
+    left: -30%;
   }
 
   :hover {
@@ -129,7 +129,7 @@ const DivButtonTres = styled("a")`
 
     font-size: 1.3em;
     -webkit-text-stroke: 1px ${({ theme }) => theme.palette.primary.main};
-    color: ${({ theme }) => theme.palette.secondary.main};
+    color: transparent;
     text-align: center;
     align-items: center;
   }
@@ -182,7 +182,7 @@ const DivButtonQuatro = styled("a")`
 
     font-size: 1.3em;
     -webkit-text-stroke: 1px ${({ theme }) => theme.palette.primary.main};
-    color: ${({ theme }) => theme.palette.secondary.main};
+    color: transparent;
     text-align: center;
     align-items: center;
   }

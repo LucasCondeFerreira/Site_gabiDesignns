@@ -136,9 +136,9 @@ const DivImgUm = styled("div")`
   border-top: 3.5px #000 solid;
   border-bottom: 3.5px #000 solid;
 
-  background-image: url(/images/pattern_rosa.svg);
+  background-image: url(/images/PostalpackageMockup.png);
   background-size: cover;
-  background-position: top left;
+  background-position: center center;
   background-repeat: no-repeat;
 
   @media (max-width: 768px) {
@@ -218,8 +218,8 @@ export const SectionTextoDois = () => {
           Trata-se de tornar o seu negócio memorável e coerente. Uma grande
           marca tem a capacidade de fazer com que seus clientes confiem no que
           você tem a oferecer - então dê o salto e vamos renomear sua empresa.
-          Em Minha promessa para você é tornar esse processo de branding livre
-          de estresse e uma experiência agradável do início ao fim.
+          Minha promessa para você é tornar esse processo de branding livre de
+          estresse e uma experiência agradável do início ao fim.
         </ParagraphBlack>
       </DivText2>
       <DivImgUm />
@@ -253,7 +253,7 @@ const DivText4 = styled("div")`
   @media (max-width: 768px) {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    padding-left: 5rem;
+    padding-left: 17%;
   }
 
   background-color: ${({ theme }) => theme.palette.primary.light};
@@ -273,12 +273,14 @@ const DivEspaco = styled("div")`
   margin: 0 auto;
   position: relative;
 
+  gap: 28px;
   > span > h1 {
     color: ${({ theme }) => theme.palette.primary.main};
   }
 
   @media (max-width: 768px) {
     padding-top: 3rem;
+    padding-left: 0.8rem;
     > span > h1 {
       font-size: 2.2em;
     }
@@ -347,9 +349,9 @@ const DivImgDois = styled("div")`
   border-top: 3.5px #000 solid;
   border-bottom: 3.5px #000 solid;
 
-  background-image: url(/images/caixa_absorv.JPG);
+  background-image: url(/images/StickerPack.png);
   background-size: cover;
-  background-position: top left;
+  background-position: center center;
   background-repeat: no-repeat;
 
   @media (max-width: 768px) {
@@ -359,7 +361,7 @@ const DivImgDois = styled("div")`
     max-width: 100%;
     width: 100%;
     margin: 0;
-    min-height: 768px;
+    min-height: 380px;
 
     padding: 65px 20px;
 
@@ -373,6 +375,7 @@ const ListPink = styled("li")`
   color: ${({ theme }) => theme.palette.primary.main};
   margin: 1.5rem 1.2rem;
 
+  font-family: "Quicksand";
   @media (max-width: 768px) {
     margin: 0.9rem 0.7rem;
   }
@@ -393,7 +396,7 @@ export const SectionTextoCinco = () => {
           </ListPink>
           <ListPink>
             Arquivo vetorizado em pdf e eps - o arquivo que você enviará para
-            gráﬁca e fazer qualquer produto personalizado, incluindo letreiros e
+            gráﬁca e para fazer qualquer outro produto personalizado, incluindo letreiros e
             outdoors, em que seu logo estará sempre em alta qualidade
             independente do tamanho em que você for usa-lo.
           </ListPink>
@@ -542,6 +545,7 @@ const Text = styled("p")`
 
   @media (max-width: 768px) {
     font-size: 0.9em;
+    line-height: 1.25em !important;
   }
 `;
 
@@ -797,7 +801,7 @@ const DivText9 = styled("div")`
   @media (max-width: 768px) {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    padding-left: 5rem;
+    padding-left: 5.5rem;
   }
 `;
 
@@ -810,12 +814,15 @@ const DivRelative = styled("div")`
   width: 100%;
   position: relative;
 
+  gap: 28px;
+
   > span > h1 {
     color: ${({ theme }) => theme.palette.primary.main} !important;
   }
 
   @media (max-width: 768px) {
     padding-top: 3rem;
+    padding-left: 0.5rem;
     > span > h1 {
       font-size: 2.2em;
     }

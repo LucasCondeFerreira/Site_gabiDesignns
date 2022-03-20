@@ -27,9 +27,9 @@ const Nav = styled("nav")`
   padding-top: 20px;
   background: transparent;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 59%;
-  flex: 0 0 59%;
-  width: 59%;
+  -ms-flex: 0 0 58%;
+  flex: 0 0 58%;
+  width: 58%;
   display: flex;
 
   @media (max-width: 768px) {
@@ -140,7 +140,9 @@ export default function Header() {
         </Ul>
         <style>{`
           .list {
+            transition: all 3s ease;
             display: ${hamburguerOpen ? "flex" : "none"};
+            z-index: 9;
           }
             @media (max-width: 768px) {
               .sumir{
@@ -203,7 +205,7 @@ const Link = styled("a")`
   text-decoration: none;
   font-size: ${({ theme }) => theme.typography.h5.fontSize};
   font-weight: 600;
-  color: ${({ theme }) => theme.palette.primary.light};
+  color: transparent;
   -webkit-text-stroke: 1px ${({ theme }) => theme.palette.primary.dark};
 `;
 

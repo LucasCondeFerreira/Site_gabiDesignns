@@ -34,7 +34,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Poppins",
+    fontFamily: ["Lemon/Milk", "Lemon/Milk light", "Quicksand"].join(","),
   },
   shape: {
     borderRadius: "16px",

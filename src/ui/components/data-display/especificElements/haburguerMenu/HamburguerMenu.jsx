@@ -60,14 +60,15 @@ export default function Hamburguer({ isOpen }) {
           }
           @media (max-width: 768px){
           .list {
+
             flex-flow: column nowrap;
             margin-top: -4.1rem;
             margin-right: -3.5rem;
             padding-top: 10rem;
             padding-bottom: 15rem;
-            background-color: pink;
-            height: 122vh;
-            width: 50%;
+            background-color: rgb( 246, 176 ,188);
+            height: 100vh;
+            width: 80%;
             float: right;
             position: absolute;
           }
