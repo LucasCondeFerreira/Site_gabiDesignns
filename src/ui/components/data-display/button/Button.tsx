@@ -97,7 +97,6 @@ export const ButtonDois: React.FC<ButtonDoisProps> = (props) => {
 
 const DivButtonTres = styled("a")`
   display: block;
-  z-index: 8;
   width: 340px;
   height: 70px;
   margin: 3rem auto;
@@ -111,38 +110,6 @@ const DivButtonTres = styled("a")`
   transform: rotate(-90deg);
   background: transparent;
 
-  @media (max-width: 380px) {
-    display: none;
-  }
-
-  @media (min-width: 381px) and (max-width: 450px) {
-    width: 240px;
-    height: 65px;
-    top: 2rem;
-    left: -42%;
-  }
-
-  @media (min-width: 451px) and (max-width: 560px) {
-    width: 240px;
-    height: 65px;
-    top: 2rem;
-    left: -37%;
-  }
-
-  @media (min-width: 561px) and (max-width: 664px) {
-    width: 240px;
-    height: 65px;
-    top: 2rem;
-    left: -40%;
-  }
-
-  @media (min-width: 665px) and (max-width: 768px) {
-    width: 240px;
-    height: 65px;
-    top: 2rem;
-    left: -25%;
-  }
-
   :hover {
     background-color: ${({ theme }) => theme.palette.secondary.light};
   }
@@ -155,6 +122,31 @@ const DivButtonTres = styled("a")`
     color: ${({ theme }) => theme.palette.primary.main};
     text-align: center;
     align-items: center;
+  }
+
+  @media (max-width: 370px) {
+    display: none;
+  }
+
+  @media (min-width: 371px) and (max-width: 768px) {
+    display: block;
+    width: 160px;
+    height: 70px;
+    margin: 0;
+    padding-top: 0.2rem;
+    position: absolute;
+    top: 16rem;
+    left: 0%;
+
+    > h4 {
+      width: 100%;
+      margin-top: 1.4rem;
+
+      font-size: 0.9em;
+      color: ${({ theme }) => theme.palette.primary.main};
+      text-align: center;
+      align-items: center;
+    }
   }
 `;
 

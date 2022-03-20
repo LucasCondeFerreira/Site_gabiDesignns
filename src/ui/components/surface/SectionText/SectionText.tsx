@@ -250,52 +250,57 @@ const DivText4 = styled("div")`
   width: 100%;
   padding: 12rem 0 6rem 12.5rem;
 
-  @media (max-width: 768px) {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-left: 17%;
+  > span > h1 {
+    color: ${({ theme }) => theme.palette.primary.main};
   }
 
   background-color: ${({ theme }) => theme.palette.primary.light};
   border-bottom: 8rem ${({ theme }) => theme.palette.secondary.main} solid;
   background-size: contain;
-`;
-
-const DivEspaco = styled("div")`
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-  width: 100%;
-  background-color: transparent;
-
-  margin: 0 auto;
-  position: relative;
-
-  gap: 28px;
-  > span > h1 {
-    color: ${({ theme }) => theme.palette.primary.main};
-  }
 
   @media (max-width: 768px) {
-    padding-top: 3rem;
-    padding-left: 0.8rem;
+    padding-top: 13rem;
+    padding-bottom: 10rem;
     > span > h1 {
-      font-size: 2.2em;
+      font-size: 1.8em;
     }
+  }
+
+  @media (min-width: 701px) and (max-width: 768px) {
+    padding-left: 17%;
+  }
+
+  @media (min-width: 631px) and (max-width: 700px) {
+    padding-left: 19%;
+  }
+
+  @media (min-width: 561px) and (max-width: 630px) {
+    padding-left: 21%;
+  }
+
+  @media (min-width: 496px) and (max-width: 560px) {
+    padding-left: 24%;
+  }
+
+  @media (min-width: 421px) and (max-width: 495px) {
+    padding-left: 28%;
+  }
+
+  @media (min-width: 371px) and (max-width: 420px) {
+    padding-left: 33%;
+  }
+  @media (max-width: 370px) {
+    padding-left: 20%;
   }
 `;
 
 export const SectionTextoQuatro = () => {
   return (
     <DivText4>
-      <DivEspaco>
-        <ButtonTres href="https://google.com" text={"COMPRE AGORA"} />
-        <H1White>
-          O QUE VOCÊ <br /> VAi COMPRAR?
-        </H1White>
-      </DivEspaco>
+      <ButtonTres href="https://google.com" text={"COMPRE AGORA"} />
+      <H1White>
+        O QUE VOCÊ <br /> VAi COMPRAR?
+      </H1White>
     </DivText4>
   );
 };
@@ -806,46 +811,55 @@ const DivText9 = styled("div")`
   min-height: 320px;
   background-color: ${({ theme }) => theme.palette.primary.light};
 
-  @media (max-width: 768px) {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-left: 5.5rem;
-  }
-`;
-
-const DivRelative = styled("div")`
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-  width: 100%;
-  position: relative;
-
-  gap: 28px;
-
   > span > h1 {
     color: ${({ theme }) => theme.palette.primary.main} !important;
   }
 
   @media (max-width: 768px) {
-    padding-top: 3rem;
-    padding-left: 0.5rem;
+    padding-top: 13rem;
+    padding-bottom: 10rem;
     > span > h1 {
-      font-size: 2.2em;
+      font-size: 1.8em;
     }
+  }
+
+  @media (min-width: 701px) and (max-width: 768px) {
+    padding-left: 17%;
+  }
+
+  @media (min-width: 631px) and (max-width: 700px) {
+    padding-left: 19%;
+  }
+
+  @media (min-width: 561px) and (max-width: 630px) {
+    padding-left: 21%;
+  }
+
+  @media (min-width: 496px) and (max-width: 560px) {
+    padding-left: 24%;
+  }
+
+  @media (min-width: 421px) and (max-width: 495px) {
+    padding-top: 12rem;
+    padding-left: 28%;
+  }
+
+  @media (min-width: 371px) and (max-width: 420px) {
+    padding-top: 12rem;
+    padding-left: 33%;
+  }
+  @media (max-width: 370px) {
+    padding-left: 20%;
   }
 `;
 
 export const SectionTextoNove = () => {
   return (
     <DivText9>
-      <DivRelative>
-        <H1White>
-          BRANDING É <br /> MAIS QUE UMA LOGO
-        </H1White>
-        <ButtonTres href="https://google.com" text={"COMPRE AGORA"} />
-      </DivRelative>
+      <H1White>
+        BRANDING É <br /> MAIS QUE UMA LOGO
+      </H1White>
+      <ButtonTres href="https://google.com" text={"COMPRE AGORA"} />
     </DivText9>
   );
 };
