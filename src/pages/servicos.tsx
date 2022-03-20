@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Range from "@components/esthetic/range/Range";
-import Header from "@components/surface/header/Header";
+import Header from "@components/surface/header/Header.jsx";
 import { SectionIcon } from "@components/surface/SectionIcon/SectionIcon";
 import {
   SectionTextoOito,
@@ -8,7 +8,7 @@ import {
 } from "@components/surface/SectionText/SectionText";
 import { SectionPrice } from "@components/data-display/especificElements/pageServicos/SectionPrices";
 
-const Home: NextPage = () => {
+const Servicos: NextPage = () => {
   return (
     <div>
       <Range />
@@ -22,4 +22,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Servicos;

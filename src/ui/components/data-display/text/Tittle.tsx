@@ -36,7 +36,7 @@ const TT1 = styled("h1")`
   margin: 0;
   padding: 0;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     font-size: 1.8rem;
   }
 `;

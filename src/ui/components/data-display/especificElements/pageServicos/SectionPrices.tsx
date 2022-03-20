@@ -63,11 +63,11 @@ const DivText2 = styled("div")`
   max-width: 50%;
   width: 50%;
   margin: 0;
-  min-height: 560px;
+  min-height: 768px;
   padding: 65px 70px;
   background: transparent;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
@@ -83,14 +83,14 @@ const DivImgUm = styled("div")`
   max-width: 50%;
   width: 50%;
   margin: 0;
-  min-height: 560px;
+  min-height: 768px;
 
   background-image: url(/images/pattern_rosa.svg);
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
@@ -104,14 +104,14 @@ const DivImgDois = styled("div")`
   max-width: 50%;
   width: 50%;
   margin: 0;
-  min-height: 560px;
+  min-height: 768px;
 
   background-image: url(/images/camisa_mulheres.JPG);
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
@@ -125,14 +125,14 @@ const DivImgTres = styled("div")`
   max-width: 50%;
   width: 50%;
   margin: 0;
-  min-height: 560px;
+  min-height: 768px;
 
   background-image: url(/images/mockup_absorv.JPG);
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     flex: 0 0 100%;
     max-width: 100%;
     width: 100%;
@@ -157,7 +157,7 @@ const List = styled("ul")`
   width: 49, 9999%;
   list-style-type: none;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     padding-left: 1.3rem;
   }
 `;
@@ -168,7 +168,7 @@ const Paragraph = styled("p")`
   align-items: center;
   color: ${({ theme }) => theme.palette.primary.light};
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     font-size: 0.9em;
   }
 `;

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
+import Hamburguer from "@components/data-display/especificElements/haburguerMenu/HamburguerMenu.jsx";
 
 const DivHeader = styled("div")`
   display: flex;
@@ -15,23 +16,35 @@ const DivHeader = styled("div")`
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0;
+    padding-right: 3rem;
+  }
 `;
 
 const Nav = styled("nav")`
   padding-top: 20px;
   background: transparent;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 60%;
-  flex: 0 0 60%;
+  -ms-flex: 0 0 59%;
+  flex: 0 0 59%;
+  width: 59%;
+  display: flex;
+
+  @media (max-width: 768px) {
+    justify-content: flex-end;
+  }
 `;
 
 const Ul = styled("ul")`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  float: right;
   background: transparent;
-  margin: 0;
-  padding: 0;
+  margin: 2rem 0;
+  padding: 0 25px;
   justify-content: space-around;
   list-style: none;
 
@@ -60,14 +73,32 @@ const A = styled("a")`
   padding: 0;
 `;
 
-const Header: React.FC = () => {
+const DivHamburguer = styled("div")`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: fixed;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 10;
+    justify-content: flex-end;
+    padding-top: 1rem;
+  }
+`;
+
+export default function Header() {
+  const [hamburguerOpen, setHamburguerOpen] = useState(false);
+
+  const toggleHamburguer = () => {
+    setHamburguerOpen(!hamburguerOpen);
+  };
   return (
     <DivHeader>
       <DivImg>
         <Img src="/images/logoGabi.png" alt="Logo do site de design" />
       </DivImg>
       <Nav>
-        <Ul>
+        <Ul className="list">
           <li>
             <A href={"/"}>HOME</A>
           </li>
@@ -81,12 +112,19 @@ const Header: React.FC = () => {
             <A href={"/termos"}> TERMOS</A>
           </li>
         </Ul>
+        <style>{`
+          .list {
+            display: ${hamburguerOpen ? "flex" : "none"};
+          }
+        `}</style>
+
+        <DivHamburguer onClick={toggleHamburguer}>
+          <Hamburguer isOpen={hamburguerOpen} />
+        </DivHamburguer>
       </Nav>
     </DivHeader>
   );
-};
-
-export default Header;
+}
 
 // HeaderWhite Style
 
@@ -138,7 +176,7 @@ const Link = styled("a")`
   -webkit-text-stroke: 1px ${({ theme }) => theme.palette.primary.dark};
 `;
 
-export const HeaderWhite: React.FC = () => {
+export const HeaderWhite = () => {
   return (
     <DivHeaderWhite>
       <Navigation>

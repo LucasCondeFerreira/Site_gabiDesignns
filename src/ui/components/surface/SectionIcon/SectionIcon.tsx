@@ -17,7 +17,7 @@ const Div = styled("div")`
   background-position: top left;
   background-repeat: no-repeat;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     padding: 4rem 0 0;
   }
 `;

@@ -22,7 +22,7 @@ const DivHeader = styled("div")`
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     min-height: 180px;
   }
 
@@ -61,7 +61,7 @@ const DivContent = styled("div")`
   padding-top: 180px;
   margin: 0 auto;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     padding-top: 150px;
   }
 `;
@@ -76,7 +76,7 @@ const H2 = styled("h2")`
 
   margin: 40px auto;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     font-size: 1.3em;
   }
 `;
@@ -85,7 +85,7 @@ const Img = styled("img")`
   width: 400px;
   height: 400px;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 260px;
     height: 260px;
   }

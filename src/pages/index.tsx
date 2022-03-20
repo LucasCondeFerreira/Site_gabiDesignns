@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Range from "@components/esthetic/range/Range";
-import Header, { HeaderWhite } from "@components/surface/header/Header";
+import Header, { HeaderWhite } from "@components/surface/header/Header.jsx";
 import SectionHome from "@components/surface/sectionHome/SectionHome";
 import { SectionIcon } from "@components/surface/SectionIcon/SectionIcon";
 import {

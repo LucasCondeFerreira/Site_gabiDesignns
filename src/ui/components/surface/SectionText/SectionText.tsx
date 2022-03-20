@@ -26,7 +26,7 @@ const Div = styled("div")`
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 `;
@@ -45,7 +45,7 @@ const DivText1 = styled("div")`
   background-position: top left;
   background-repeat: no-repeat;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 100%;
     max-width: 100%;
     padding: 0 0;
@@ -64,7 +64,7 @@ const DivText2 = styled("div")`
   max-width: 50%;
   width: 50%;
   margin: 0;
-  min-height: 560px;
+  min-height: 768px;
 
   padding: 65px 70px;
 
@@ -76,7 +76,7 @@ const DivText2 = styled("div")`
   background-position: top left;
   background-repeat: no-repeat;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -114,7 +114,7 @@ const DivText3 = styled("div")`
     text-align: center;
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     min-height: 240px;
 
     > span > h1 {
@@ -131,7 +131,7 @@ const DivImgUm = styled("div")`
   max-width: 50%;
   width: 50%;
   margin: 0;
-  min-height: 560px;
+  min-height: 768px;
 
   border-top: 3.5px #000 solid;
   border-bottom: 3.5px #000 solid;
@@ -141,7 +141,7 @@ const DivImgUm = styled("div")`
   background-position: top left;
   background-repeat: no-repeat;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -172,7 +172,7 @@ const DivContainUm = styled("div")`
     }
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 95%;
     max-width: 95%;
     padding: 3rem 0;
@@ -250,6 +250,12 @@ const DivText4 = styled("div")`
   width: 100%;
   padding: 12rem 0 6rem 12.5rem;
 
+  @media (max-width: 768px) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+  }
+
   background-color: ${({ theme }) => theme.palette.primary.light};
   border-bottom: 8rem ${({ theme }) => theme.palette.secondary.main} solid;
   background-size: contain;
@@ -269,6 +275,13 @@ const DivEspaco = styled("div")`
 
   > span > h1 {
     color: ${({ theme }) => theme.palette.primary.main};
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+    > span > h1 {
+      font-size: 2.2em;
+    }
   }
 `;
 
@@ -294,7 +307,7 @@ const DivText5 = styled("div")`
   max-width: 50%;
   width: 50%;
   margin: 0;
-  min-height: 560px;
+  min-height: 768px;
 
   padding: 65px 70px;
 
@@ -306,6 +319,20 @@ const DivText5 = styled("div")`
   background-size: contain;
   background-position: top left;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    min-height: 768px;
+
+    padding: 65px 20px;
+
+    border: none;
+  }
 `;
 
 const DivImgDois = styled("div")`
@@ -315,7 +342,7 @@ const DivImgDois = styled("div")`
   max-width: 50%;
   width: 50%;
   margin: 0;
-  min-height: 560px;
+  min-height: 768px;
 
   border-top: 3.5px #000 solid;
   border-bottom: 3.5px #000 solid;
@@ -324,6 +351,20 @@ const DivImgDois = styled("div")`
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    min-height: 768px;
+
+    padding: 65px 20px;
+
+    border-top: none;
+  }
 `;
 
 const Ol = styled("ol")``;
@@ -331,6 +372,10 @@ const Ol = styled("ol")``;
 const ListPink = styled("li")`
   color: ${({ theme }) => theme.palette.primary.main};
   margin: 1.5rem 1.2rem;
+
+  @media (max-width: 768px) {
+    margin: 0.9rem 0.7rem;
+  }
 `;
 
 export const SectionTextoCinco = () => {
@@ -406,6 +451,13 @@ const DivText6 = styled("div")`
     text-align: center;
     color: ${({ theme }) => theme.palette.primary.main};
   }
+
+  @media (max-width: 768px) {
+    > span > h1 {
+      font-size: 2.8em;
+    }
+    padding: 7rem 0 6rem;
+  }
 `;
 
 export const SectionTextoSeis = () => {
@@ -440,6 +492,11 @@ const DivContainDois = styled("div")`
   margin: 0 auto;
   width: 820px;
   max-width: 820px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    max-width: 90%;
+  }
 `;
 
 const DivContainTexto = styled("div")`
@@ -453,6 +510,15 @@ const DivContainTexto = styled("div")`
     font-size: 1.5em;
     line-height: 2em !important;
   }
+
+  @media (max-width: 768px) {
+    width: 95%;
+    max-width: 95%;
+
+    > p {
+      font-size: 1.4em;
+    }
+  }
 `;
 
 const DivContainRosa = styled("div")`
@@ -463,11 +529,20 @@ const DivContainRosa = styled("div")`
   > p {
     color: ${({ theme }) => theme.palette.primary.light};
   }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    max-width: 90%;
+  }
 `;
 
 const Text = styled("p")`
   font-size: 1.2em;
   color: ${({ theme }) => theme.palette.primary.dark};
+
+  @media (max-width: 768px) {
+    font-size: 0.9em;
+  }
 `;
 
 const DivRosaUm = styled("div")`
@@ -689,7 +764,7 @@ const DivText8 = styled("div")`
     text-align: center;
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     min-height: 230px;
   }
 `;
@@ -719,7 +794,7 @@ const DivText9 = styled("div")`
   min-height: 320px;
   background-color: ${({ theme }) => theme.palette.primary.light};
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     padding-top: 10rem;
     padding-bottom: 10rem;
     padding-left: 5rem;
@@ -739,8 +814,11 @@ const DivRelative = styled("div")`
     color: ${({ theme }) => theme.palette.primary.main} !important;
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     padding-top: 3rem;
+    > span > h1 {
+      font-size: 2.2em;
+    }
   }
 `;
 

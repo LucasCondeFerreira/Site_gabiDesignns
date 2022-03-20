@@ -15,7 +15,7 @@ const DivButton = styled("a")`
 
   background: ${({ theme }) => theme.palette.primary.dark};
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 240px;
     height: 65px;
   }

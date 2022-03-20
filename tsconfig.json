@@ -21,8 +21,14 @@
       "@themes/*": ["ui/themes/*"],
       "@data/*": ["data/*"],
       "@pages/*": ["pages/*"]
-    },
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/ui/components/surface/header/Header.jsx",
+    "src/ui/components/data-display/especificElements/haburguerMenu/HamburguerMenu.jsx"
+  ],
   "exclude": ["node_modules"]
 }

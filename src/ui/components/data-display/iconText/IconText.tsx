@@ -15,14 +15,14 @@ const DivIcones = styled("div")`
 
   columns: 1;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     margin-top: 3rem;
     margin-bottom: 5rem;
   }
 
   > span > h2,
   h4 {
-    @media (max-width: 560px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }

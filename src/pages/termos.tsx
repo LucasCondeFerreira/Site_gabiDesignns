@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 import Range from "@components/esthetic/range/Range";
-import Header from "@components/surface/header/Header";
+import Header from "@components/surface/header/Header.jsx";
 import {
   SectionTextoSeis,
   SectionTextoSete,
 } from "@components/surface/SectionText/SectionText";
 
-const Home: NextPage = () => {
+const Termos: NextPage = () => {
   return (
     <div>
       <Range />
@@ -18,4 +18,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Termos;

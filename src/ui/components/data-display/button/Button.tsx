@@ -14,7 +14,7 @@ const DivButtonUm = styled("a")`
 
   background: ${({ theme }) => theme.palette.primary.light};
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 240px;
     height: 65px;
   }
@@ -61,7 +61,7 @@ const DivButtonDois = styled("a")`
 
   background: transparent;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 240px;
     height: 65px;
   }
@@ -112,7 +112,7 @@ const DivButtonTres = styled("a")`
   transform: rotate(-90deg);
   background: transparent;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 240px;
     height: 65px;
     top: 2rem;
@@ -166,7 +166,7 @@ const DivButtonQuatro = styled("a")`
   transform: rotate(-90deg);
   background: transparent;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 240px;
     height: 65px;
   }

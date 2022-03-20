@@ -12,7 +12,7 @@ const H1 = styled("h1")`
   align-items: center;
   text-align: center;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     font-size: 2.8em;
   }
 
@@ -43,7 +43,7 @@ const P = styled("p")`
   margin: 15px auto;
   max-width: 420px;
 
-  @media (max-width: 560px) {
+  @media (max-width: 768px) {
     width: 340px;
     height: 65px;
 
