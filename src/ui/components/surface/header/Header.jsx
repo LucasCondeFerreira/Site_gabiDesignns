@@ -210,7 +210,11 @@ const Item = styled("li")`
   border-width: 1px;
   border-radius: 60px;
   padding: 0.5rem 0;
-  width: 35%;
+  width: 14.999%;
+
+  @media (max-width: 768px) {
+    width: 35%;
+  }
 `;
 
 const Link = styled("a")`
