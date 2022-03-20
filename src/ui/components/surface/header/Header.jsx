@@ -11,6 +11,7 @@ const DivHeader = styled("div")`
   margin: 0;
   padding: 0 3.5rem;
   float: right;
+  overflow: hidden;
 
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
@@ -27,9 +28,9 @@ const Nav = styled("nav")`
   padding-top: 20px;
   background: transparent;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 58%;
-  flex: 0 0 58%;
-  width: 58%;
+  -ms-flex: 0 0 59%;
+  flex: 0 0 59%;
+  width: 59%;
   display: flex;
 
   @media (max-width: 768px) {
@@ -61,6 +62,12 @@ const Ul = styled("ul")`
   list-style: none;
 
   gap: 28px;
+
+  @media (max-width: 768px) {
+    > li {
+      margin: 0 auto;
+    }
+  }
 `;
 
 const DivImg = styled("div")`
@@ -90,11 +97,10 @@ const DivHamburguer = styled("div")`
 
   @media (max-width: 768px) {
     display: fixed;
-    margin-top: 10px;
     margin-left: 10px;
     z-index: 10;
     justify-content: flex-end;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 `;
 
@@ -140,8 +146,13 @@ export default function Header() {
         </Ul>
         <style>{`
           .list {
-            transition: all 3s ease;
-            display: ${hamburguerOpen ? "flex" : "none"};
+            transition: all 1.3s ease;
+            opacity: ${hamburguerOpen ? "1" : "0"};
+            width: ${hamburguerOpen ? "101vw" : "50vw"};
+            transform: ${
+              hamburguerOpen ? "translateX(0)" : "translateX(-100%)"
+            };
+            
             z-index: 9;
           }
             @media (max-width: 768px) {
@@ -198,15 +209,17 @@ const Item = styled("li")`
   border-style: solid;
   border-width: 1px;
   border-radius: 60px;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 0;
+  width: 35%;
 `;
 
 const Link = styled("a")`
   text-decoration: none;
   font-size: ${({ theme }) => theme.typography.h5.fontSize};
   font-weight: 600;
-  color: transparent;
-  -webkit-text-stroke: 1px ${({ theme }) => theme.palette.primary.dark};
+  color: ${({ theme }) => theme.palette.primary.dark};
+  text-align: center;
+  display: block;
 `;
 
 export const HeaderWhite = () => {

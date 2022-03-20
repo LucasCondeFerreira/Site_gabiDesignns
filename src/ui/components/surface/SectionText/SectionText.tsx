@@ -48,7 +48,7 @@ const DivText1 = styled("div")`
   @media (max-width: 768px) {
     width: 100%;
     max-width: 100%;
-    padding: 0 0;
+    padding: 0 2.2rem;
 
     > span > h2 {
       text-align: start;
@@ -84,7 +84,7 @@ const DivText2 = styled("div")`
     width: 100%;
     min-height: 320px;
 
-    padding: 65px 20px;
+    padding: 65px 3rem;
 
     > span > h2 {
       text-align: start;
@@ -106,7 +106,7 @@ const DivText3 = styled("div")`
   flex: 0 0 100%;
   max-width: 100%;
   width: 100%;
-  padding: 3rem 0 1.5rem;
+  padding: 3rem 3rem 1.5rem;
   min-height: 320px;
 
   background-color: ${({ theme }) => theme.palette.secondary.main};
@@ -119,7 +119,7 @@ const DivText3 = styled("div")`
 
     > span > h1 {
       text-align: center;
-      font-size: 1.8em;
+      font-size: 1.7em;
     }
   }
 `;
@@ -311,11 +311,10 @@ const DivText5 = styled("div")`
   margin: 0;
   min-height: 768px;
 
-  padding: 65px 70px;
+  padding: 65px 3rem;
 
   border-top: 3.5px #000 solid;
   border-right: 3.5px #000 solid;
-  border-bottom: 3.5px #000 solid;
 
   background-color: ${({ theme }) => theme.palette.primary.light};
   background-size: contain;
@@ -331,7 +330,7 @@ const DivText5 = styled("div")`
     margin: 0;
     min-height: 768px;
 
-    padding: 65px 20px;
+    padding: 65px 3rem;
 
     border: none;
   }
@@ -347,7 +346,6 @@ const DivImgDois = styled("div")`
   min-height: 768px;
 
   border-top: 3.5px #000 solid;
-  border-bottom: 3.5px #000 solid;
 
   background-image: url(/images/StickerPack.png);
   background-size: cover;
@@ -366,10 +364,13 @@ const DivImgDois = styled("div")`
     padding: 65px 20px;
 
     border-top: none;
+    border-bottom: 3.5px #000 solid;
   }
 `;
 
-const Ol = styled("ol")``;
+const Ol = styled("ol")`
+  padding-left: 0.8rem;
+`;
 
 const ListPink = styled("li")`
   color: ${({ theme }) => theme.palette.primary.main};
@@ -396,9 +397,9 @@ export const SectionTextoCinco = () => {
           </ListPink>
           <ListPink>
             Arquivo vetorizado em pdf e eps - o arquivo que você enviará para
-            gráﬁca e para fazer qualquer outro produto personalizado, incluindo letreiros e
-            outdoors, em que seu logo estará sempre em alta qualidade
-            independente do tamanho em que você for usa-lo.
+            gráﬁca e para fazer qualquer outro produto personalizado, incluindo
+            letreiros e outdoors, em que seu logo estará sempre em alta
+            qualidade independente do tamanho em que você for usa-lo.
           </ListPink>
           <ListPink>
             Submarca - A logo em formato circular, para aplicações menores.
@@ -459,7 +460,7 @@ const DivText6 = styled("div")`
     > span > h1 {
       font-size: 2.8em;
     }
-    padding: 7rem 0 6rem;
+    padding: 9rem 0 6rem;
   }
 `;
 
@@ -497,8 +498,9 @@ const DivContainDois = styled("div")`
   max-width: 820px;
 
   @media (max-width: 768px) {
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3rem;
   }
 `;
 
@@ -512,12 +514,14 @@ const DivContainTexto = styled("div")`
     text-align: center;
     font-size: 1.5em;
     line-height: 2em !important;
+    margin-top: 0;
+    padding: 0.8rem 0;
   }
 
   @media (max-width: 768px) {
-    width: 95%;
-    max-width: 95%;
-
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3rem;
     > p {
       font-size: 1.4em;
     }
@@ -534,14 +538,17 @@ const DivContainRosa = styled("div")`
   }
 
   @media (max-width: 768px) {
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3rem;
   }
 `;
 
 const Text = styled("p")`
   font-size: 1.2em;
   color: ${({ theme }) => theme.palette.primary.dark};
+  margin-bottom: 0;
+  padding-bottom: 1rem;
 
   @media (max-width: 768px) {
     font-size: 0.9em;
@@ -612,7 +619,8 @@ export const SectionTextoSete = () => {
             7. Criar o design de acordo com o Brieﬁng preenchido pelo cliente.
             <br />
             <br />
-            8. Dar devido atendimento ao cliente pelo e-mail ###########
+            8. Dar devido atendimento ao cliente pelo e-mail
+            gabrieladdesigner@gmail.com
             <br />
             <br />
             9. Enviar a proposta no prazo de 15 dias ÚTEIS, que foi estabelecido

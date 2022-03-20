@@ -123,7 +123,6 @@ const Links: NextPage = () => {
       <DivFooter>
         <H2>MAKE YOUR DREAMS COME TRUE</H2>
       </DivFooter>
-      <Range />
     </div>
   );
 };

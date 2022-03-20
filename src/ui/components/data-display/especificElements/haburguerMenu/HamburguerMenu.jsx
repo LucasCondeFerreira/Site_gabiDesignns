@@ -2,16 +2,16 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 
 const DivHamburguer = styled("div")`
-  width: 2rem;
-  max-width: 2rem;
-  height: 2rem;
+  width: 48px;
+  max-width: 48px;
+  height: 3rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
 `;
 
 const DivUm = styled("div")`
-  width: 2rem;
+  width: 48px;
   height: 0.25rem;
   border-radius: 10px;
   background-color: ${({ theme }) => theme.palette.primary.main};
@@ -19,7 +19,7 @@ const DivUm = styled("div")`
 `;
 
 const DivDois = styled("div")`
-  width: 2rem;
+  width: 48px;
   height: 0.25rem;
   border-radius: 10px;
   background-color: ${({ theme }) => theme.palette.primary.main};
@@ -28,7 +28,7 @@ const DivDois = styled("div")`
 `;
 
 const DivTres = styled("div")`
-  width: 2rem;
+  width: 48px;
   height: 0.25rem;
   border-radius: 10px;
   background-color: ${({ theme }) => theme.palette.primary.main};
@@ -66,9 +66,8 @@ export default function Hamburguer({ isOpen }) {
             margin-right: -3.5rem;
             padding-top: 10rem;
             padding-bottom: 15rem;
-            background-color: rgb( 246, 176 ,188);
+            background-color: #f9efe5;
             height: 100vh;
-            width: 80%;
             float: right;
             position: absolute;
           }

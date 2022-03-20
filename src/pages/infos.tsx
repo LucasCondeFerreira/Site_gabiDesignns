@@ -14,7 +14,6 @@ const Infos: NextPage = () => {
       <Header />
       <SectionTextoQuatro />
       <SectionTextoCinco />
-      <Range />
     </div>
   );
 };

@@ -5,7 +5,7 @@ const DivButtonUm = styled("a")`
   font-size: 18px;
   display: block;
 
-  width: 380px;
+  width: 70%;
   height: 70px;
   margin: 25px auto;
 
@@ -15,7 +15,7 @@ const DivButtonUm = styled("a")`
   background: ${({ theme }) => theme.palette.primary.light};
 
   @media (max-width: 768px) {
-    width: 240px;
+    width: 60%;
     height: 65px;
   }
 
@@ -62,7 +62,7 @@ const DivButtonDois = styled("a")`
   background: transparent;
 
   @media (max-width: 768px) {
-    width: 240px;
+    width: 60%;
     height: 65px;
   }
 
@@ -75,8 +75,7 @@ const DivButtonDois = styled("a")`
     margin-top: 1.4rem;
 
     font-size: 1.3em;
-    -webkit-text-stroke: 1px ${({ theme }) => theme.palette.primary.light};
-    color: ${({ theme }) => theme.palette.secondary.main};
+    color: ${({ theme }) => theme.palette.primary.light};
     text-align: center;
     align-items: center;
   }
@@ -98,13 +97,13 @@ export const ButtonDois: React.FC<ButtonDoisProps> = (props) => {
 
 const DivButtonTres = styled("a")`
   display: block;
-
-  width: 260px;
+  z-index: 8;
+  width: 340px;
   height: 70px;
-  margin: 25px auto;
+  margin: 3rem auto;
   position: absolute;
   top: 2rem;
-  right: 95%;
+  right: 92%;
 
   border: 1px ${({ theme }) => theme.palette.primary.main} solid;
   border-radius: 50px;
@@ -112,11 +111,36 @@ const DivButtonTres = styled("a")`
   transform: rotate(-90deg);
   background: transparent;
 
-  @media (max-width: 768px) {
+  @media (max-width: 370px) {
+    display: none;
+  }
+
+  @media (min-width: 371px) and (max-width: 450px) {
     width: 240px;
     height: 65px;
     top: 2rem;
-    left: -30%;
+    left: -49%;
+  }
+
+  @media (min-width: 451px) and (max-width: 560px) {
+    width: 240px;
+    height: 65px;
+    top: 2rem;
+    left: -37%;
+  }
+
+  @media (min-width: 561px) and (max-width: 664px) {
+    width: 240px;
+    height: 65px;
+    top: 2rem;
+    left: -40%;
+  }
+
+  @media (min-width: 665px) and (max-width: 768px) {
+    width: 240px;
+    height: 65px;
+    top: 2rem;
+    left: -25%;
   }
 
   :hover {
@@ -128,8 +152,7 @@ const DivButtonTres = styled("a")`
     margin-top: 1.4rem;
 
     font-size: 1.3em;
-    -webkit-text-stroke: 1px ${({ theme }) => theme.palette.primary.main};
-    color: transparent;
+    color: ${({ theme }) => theme.palette.primary.main};
     text-align: center;
     align-items: center;
   }
@@ -181,8 +204,7 @@ const DivButtonQuatro = styled("a")`
     margin-top: 1.4rem;
 
     font-size: 1.3em;
-    -webkit-text-stroke: 1px ${({ theme }) => theme.palette.primary.main};
-    color: transparent;
+    color: ${({ theme }) => theme.palette.primary.main};
     text-align: center;
     align-items: center;
   }

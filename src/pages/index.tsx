@@ -20,7 +20,6 @@ const Home: NextPage = () => {
       <SectionTextoDois />
       <SectionTextoTres />
       <SectionIcon />
-      <Range />
     </div>
   );
 };

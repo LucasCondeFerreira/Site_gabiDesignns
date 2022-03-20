@@ -13,7 +13,6 @@ const Termos: NextPage = () => {
       <Header />
       <SectionTextoSeis />
       <SectionTextoSete />
-      <Range />
     </div>
   );
 };

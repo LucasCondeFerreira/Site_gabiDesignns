@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material";
 import theme from "@themes/theme";
 import Head from "next/head";
+import { RangeBottom } from "@components/esthetic/range/Range";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
+        <RangeBottom />
       </ThemeProvider>
     </>
   );

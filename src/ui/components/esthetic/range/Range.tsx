@@ -34,3 +34,17 @@ const Range: React.FC<RangeProps> = (props) => {
 };
 
 export default Range;
+
+const DivRangeDois = styled("div")`
+  background-color: ${({ theme }) => theme.palette.primary.main};
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 100px;
+  padding: 0.7rem 0 0;
+`;
+
+export const RangeBottom = () => {
+  return <DivRangeDois />;
+};

@@ -31,7 +31,6 @@ const DivDois = styled("div")`
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 
   flex-direction: row-reverse;
@@ -46,9 +45,9 @@ const DivTres = styled("div")`
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 
+  flex-direction: row;
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
@@ -64,7 +63,7 @@ const DivText2 = styled("div")`
   width: 50%;
   margin: 0;
   min-height: 768px;
-  padding: 65px 70px;
+  padding: 65px 3rem;
   background: transparent;
 
   @media (max-width: 768px) {
@@ -72,7 +71,7 @@ const DivText2 = styled("div")`
     max-width: 100%;
     width: 100%;
 
-    padding: 65px 35px;
+    padding: 65px 3rem;
   }
 `;
 
@@ -147,6 +146,7 @@ const DivList = styled("div")`
   width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 `;
 
 const List = styled("ul")`
@@ -156,20 +156,22 @@ const List = styled("ul")`
   max-width: 49, 9999%;
   width: 49, 9999%;
   list-style-type: none;
-
-  @media (max-width: 768px) {
-    padding-left: 1.3rem;
-  }
+  padding: 0;
 `;
 
 const Paragraph = styled("p")`
+  display: inline-block;
+  display: flex;
+  flex-flow: column nowrap;
   font-size: 1.1em;
   text-align: start;
-  align-items: center;
   color: ${({ theme }) => theme.palette.primary.light};
 
+  > li {
+    display: inline-block;
+  }
   @media (max-width: 768px) {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 `;
 
@@ -253,7 +255,7 @@ export const SectionPrice = () => {
             Nossa marca constitui o que somos e o que queremos que a nossa
             empresa seja ou represente dentro do mercado, hoje em dia no mundo
             digital você precisa de uma marca que lembre a todos quem você e sua
-            empresa signiﬁcam. Por isso criamos esse pacote PREMIUM!
+            empresa signiﬁcam. Por isso criamos esse pacote Enterprise!
           </ParagraphWhite>
           <DivList>
             <List>
@@ -273,7 +275,10 @@ export const SectionPrice = () => {
                 <li>Criativos feed</li>
                 <li>Patterns</li>
                 <li>Mockups</li>
-                <li>Tudo enviado em 5 formatos (PNG,JPG,PDF,AI e SVG)</li>
+                <li>
+                  Tudo enviado em <br /> 5 formatos <br /> (PNG,JPG,PDF,AI e
+                  SVG)
+                </li>
               </Paragraph>
             </List>
           </DivList>

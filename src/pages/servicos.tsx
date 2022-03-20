@@ -17,7 +17,6 @@ const Servicos: NextPage = () => {
       <SectionPrice />
       <SectionTextoOito />
       <SectionIcon />
-      <Range />
     </div>
   );
 };
