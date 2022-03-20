@@ -101,8 +101,8 @@ const DivButtonTres = styled("a")`
   height: 70px;
   margin: 3rem auto;
   position: absolute;
-  top: 2rem;
-  right: 92%;
+  top: 16rem;
+  left: 0%;
 
   border: 1px ${({ theme }) => theme.palette.primary.main} solid;
   border-radius: 50px;
@@ -131,16 +131,16 @@ const DivButtonTres = styled("a")`
   @media (min-width: 371px) and (max-width: 768px) {
     display: block;
     width: 160px;
-    height: 70px;
+    height: 40px;
     margin: 0;
-    padding-top: 0.2rem;
+    padding-top: 10px;
     position: absolute;
-    top: 16rem;
+    top: 17rem;
     left: 0%;
 
     > h4 {
       width: 100%;
-      margin-top: 1.4rem;
+      margin-top: 0;
 
       font-size: 0.9em;
       color: ${({ theme }) => theme.palette.primary.main};

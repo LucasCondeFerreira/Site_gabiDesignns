@@ -248,7 +248,7 @@ const DivText4 = styled("div")`
   flex: 0 0 100%;
   max-width: 100%;
   width: 100%;
-  padding: 12rem 0 6rem 12.5rem;
+  padding: 12rem 0 6rem 14rem;
 
   > span > h1 {
     color: ${({ theme }) => theme.palette.primary.main};
@@ -259,10 +259,10 @@ const DivText4 = styled("div")`
   background-size: contain;
 
   @media (max-width: 768px) {
-    padding-top: 13rem;
+    padding-top: 12rem;
     padding-bottom: 10rem;
     > span > h1 {
-      font-size: 1.8em;
+      font-size: 2.5em;
     }
   }
 
@@ -287,10 +287,18 @@ const DivText4 = styled("div")`
   }
 
   @media (min-width: 371px) and (max-width: 420px) {
+    padding-top: 13rem;
     padding-left: 33%;
+    > span > h1 {
+      font-size: 1.8em;
+    }
   }
   @media (max-width: 370px) {
+    padding-top: 13rem;
     padding-left: 20%;
+    > span > h1 {
+      font-size: 1.8em;
+    }
   }
 `;
 
@@ -528,6 +536,7 @@ const DivContainTexto = styled("div")`
     max-width: 100%;
     padding: 0 3rem;
     > p {
+      line-height: 1.25em !important;
       font-size: 1.4em;
     }
   }
@@ -807,7 +816,7 @@ const DivText9 = styled("div")`
   width: 100%;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  padding-left: 12rem;
+  padding-left: 14rem;
   min-height: 320px;
   background-color: ${({ theme }) => theme.palette.primary.light};
 
@@ -819,7 +828,7 @@ const DivText9 = styled("div")`
     padding-top: 13rem;
     padding-bottom: 10rem;
     > span > h1 {
-      font-size: 1.8em;
+      font-size: 2.3em;
     }
   }
 
@@ -847,9 +856,15 @@ const DivText9 = styled("div")`
   @media (min-width: 371px) and (max-width: 420px) {
     padding-top: 12rem;
     padding-left: 33%;
+    > span > h1 {
+      font-size: 1.8em;
+    }
   }
   @media (max-width: 370px) {
     padding-left: 20%;
+    > span > h1 {
+      font-size: 1.8em;
+    }
   }
 `;
 

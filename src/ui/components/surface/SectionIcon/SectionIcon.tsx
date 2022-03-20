@@ -10,7 +10,7 @@ const Div = styled("div")`
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  padding: 10rem 0 0;
+  padding: 6rem 0 2rem;
 
   background-color: ${({ theme }) => theme.palette.primary.light};
   background-size: contain;
@@ -38,19 +38,19 @@ export const SectionIcon = () => {
     <Div>
       <DivContain>
         <Icon
-          src={"/images/icone-teste.png"}
+          src={"/images/icone-criacao.png"}
           alt={"imagem de design"}
-          text={"Criação de identidade visual, com muita estrategia."}
+          title={"Criação"}
         />
         <Icon
-          src={"/images/icone-teste.png"}
+          src={"/images/icone-briefing.png"}
           alt={"imagem de design"}
-          text={"Estilo unico e identidade visual memorável."}
+          title={"Briefing"}
         />
         <Icon
-          src={"/images/icone-teste.png"}
+          src={"/images/icone-batepapo.png"}
           alt={"imagem de design"}
-          text={"Profissional disponivel durante a criação do seu branding."}
+          title={"Bate-papo"}
         />
       </DivContain>
     </Div>

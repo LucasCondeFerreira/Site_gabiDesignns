@@ -1,13 +1,14 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import { H2Black, H4Black } from "@components/data-display/text/Tittle";
+import { ParagraphBlack } from "@components/data-display/text/Paragraph";
 
 const DivIcones = styled("div")`
   display: flex;
   flex-direction: column;
   padding: 0 20px;
   width: 340px;
-  height: 120px;
+  min-height: 270px;
 
   justify-content: center;
   align-items: center;
@@ -15,17 +16,20 @@ const DivIcones = styled("div")`
 
   columns: 1;
 
+  > span > h2 {
+    -webkit-text-stroke: 2px ${({ theme }) => theme.palette.primary.main};
+    color: transparent;
+  }
   @media (max-width: 768px) {
     margin-top: 3rem;
     margin-bottom: 5rem;
-  }
+    min-height: 1px;
 
-  > span > h2,
-  h4 {
-    @media (max-width: 768px) {
+    > span > p {
       display: none;
     }
   }
+
   :nth-child(even) {
     position: relative;
 
@@ -59,8 +63,8 @@ const DivIcones = styled("div")`
   }
 `;
 const ImgIcone = styled("img")`
-  max-width: 190px;
   max-height: 190px;
+  min-height: 190px;
   margin-bottom: 1rem;
 `;
 
@@ -76,7 +80,7 @@ export const Icon: React.FC<IconProps> = (props) => {
     <DivIcones>
       <ImgIcone src={props.src} alt={props.alt} />
       <H2Black>{props.title}</H2Black>
-      <H4Black>{props.text}</H4Black>
+      <ParagraphBlack>{props.text}</ParagraphBlack>
     </DivIcones>
   );
 };
