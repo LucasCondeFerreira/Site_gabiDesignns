@@ -234,7 +234,10 @@ export const SectionTextoTres = () => {
         <H1White>
           VOCÊ ESTÁ PRONTO <br /> PARA TER A MELHOR LOGO?
         </H1White>
-        <ButtonDois href="https://google.com.br" text={"COMPRE AGORA"} />
+        <ButtonDois
+          href="https://api.whatsapp.com/send?phone=5551990186409&text=Ol%C3%A1%20Gabi%20%F0%9F%A7%A1.%20Me%20interessei%20pelos%20pacotes%2C%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%3A%20(*INSIRA%20AQUI%20o%20que%20gostaria%20de%20saber*)"
+          text={"COMPRE AGORA"}
+        />
       </DivText3>
     </>
   );
@@ -305,7 +308,10 @@ const DivText4 = styled("div")`
 export const SectionTextoQuatro = () => {
   return (
     <DivText4>
-      <ButtonTres href="https://google.com" text={"COMPRE AGORA"} />
+      <ButtonTres
+        href="https://api.whatsapp.com/send?phone=5551990186409&text=Ol%C3%A1%20Gabi%20%F0%9F%A7%A1.%20Me%20interessei%20pelos%20pacotes%2C%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%3A%20(*INSIRA%20AQUI%20o%20que%20gostaria%20de%20saber*)"
+        text={"COMPRE AGORA"}
+      />
       <H1White>
         O QUE VOCÊ <br /> VAi COMPRAR?
       </H1White>
@@ -800,7 +806,10 @@ export const SectionTextoOito = () => {
     <>
       <DivText8>
         <H1White>SE INTERESSOU?</H1White>
-        <ButtonDois href="https://google.com" text={"COMPRE AGORA"} />
+        <ButtonDois
+          href="https://api.whatsapp.com/send?phone=5551990186409&text=Ol%C3%A1%20Gabi%20%F0%9F%A7%A1.%20Me%20interessei%20pelos%20pacotes%2C%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%3A%20(*INSIRA%20AQUI%20o%20que%20gostaria%20de%20saber*)"
+          text={"COMPRE AGORA"}
+        />
       </DivText8>
     </>
   );
@@ -874,7 +883,10 @@ export const SectionTextoNove = () => {
       <H1White>
         BRANDING É <br /> MAIS QUE UMA LOGO
       </H1White>
-      <ButtonTres href="https://google.com" text={"COMPRE AGORA"} />
+      <ButtonTres
+        href="https://api.whatsapp.com/send?phone=5551990186409&text=Ol%C3%A1%20Gabi%20%F0%9F%A7%A1.%20Me%20interessei%20pelos%20pacotes%2C%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%3A%20(*INSIRA%20AQUI%20o%20que%20gostaria%20de%20saber*)"
+        text={"COMPRE AGORA"}
+      />
     </DivText9>
   );
 };
