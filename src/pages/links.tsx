@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Range from "@components/esthetic/range/Range";
 import Button from "@components/data-display/especificElements/pageLinks/Button";
 import Text from "@components/data-display/especificElements/pageLinks/Text";
 import { styled } from "@mui/material/styles";
@@ -102,7 +101,6 @@ const Img = styled("img")`
 const Links: NextPage = () => {
   return (
     <div>
-      <Range />
       <DivHeader>
         <Img src="/images/logoGabi.png" alt="" />
       </DivHeader>
