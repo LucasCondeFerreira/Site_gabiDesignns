@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
-import { HeaderWhite } from "@components/surface/header/Header.jsx";
+import Range from "@components/esthetic/range/Range";
+import Header, { HeaderWhite } from "@components/surface/header/Header.jsx";
 import SectionHome from "@components/surface/sectionHome/SectionHome";
 import { SectionIcon } from "@components/surface/SectionIcon/SectionIcon";
 import {
@@ -11,6 +12,8 @@ import {
 const Home: NextPage = () => {
   return (
     <div>
+      <Range />
+      <Header />
       <SectionHome />
       <SectionTextoUm />
       <HeaderWhite />
