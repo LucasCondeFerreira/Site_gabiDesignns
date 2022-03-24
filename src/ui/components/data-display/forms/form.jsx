@@ -53,36 +53,36 @@ export default class Form extends Component {
 
   handleSubmit(event) {
     window.location.href =
-      "https://api.whatsapp.com/send?phone=5551990186409&text=Aqui%20está%20a%20resposta%20do%20briefing%20referente%20a%20compra%20de%20uma%20identidade%20visual%20💜%0D%0A%0D%0A%0D%0A" +
-      "Qual o nome do seu negócio?" +
+      "https://api.whatsapp.com/send?phone=5551990186409&text=Aqui%20está%20a%20resposta%20do%20briefing%20referente%20a%20compra%20de%20uma%20identidade%20visual%20💜%0D%0A%0D%0A%0D%0A%0D%0A" +
+      "%0D%0A%0D%0A%0D%0AQual o nome do seu negócio?%0D%0A%0D%0A" +
       this.state.um +
-      "%0D%0A%0D%0AQual%20o%20nicho%20do%20seu%20negocio?" +
+      "%0D%0A%0D%0A%0D%0AQual%20o%20nicho%20do%20seu%20negócio?%0D%0A%0D%0A" +
       this.state.dois +
-      "%0D%0A%0D%0APorque%20você%20iniciou%20seu%20negócio?" +
+      "%0D%0A%0D%0A%0D%0APorque%20você%20iniciou%20seu%20negócio?%0D%0A%0D%0A" +
       this.state.tres +
-      "%0D%0A%0D%0AEntre%20em%20detalhes%20sobre%20sua%20visão%20sobre%20o%20seu%20branding" +
+      "%0D%0A%0D%0A%0D%0AEntre%20em%20detalhes%20sobre%20sua%20visão%20sobre%20o%20seu%20branding:%0D%0A%0D%0A" +
       this.state.quatro +
-      "%0D%0A%0D%0AQuais%20cores%20são%20indispensáveis%20para%20a%20criação%20da%20sua%20identidade%20Visual" +
+      "%0D%0A%0D%0A%0D%0AQuais%20cores%20são%20indispensáveis%20para%20a%20criação%20da%20sua%20identidade%20Visual?%0D%0A%0D%0A" +
       this.state.cinco +
-      "%0D%0A%0D%0AQuais%20cores%20você%20não%20quer%20de%20jeito%20nenhum" +
+      "%0D%0A%0D%0A%0D%0AQuais%20cores%20você%20não%20quer%20de%20jeito%20nenhum?%0D%0A%0D%0A" +
       this.state.seis +
-      "%0D%0A%0D%0AQuais%20são%20seus%20maiores%20concorrentes" +
+      "%0D%0A%0D%0A%0D%0AQuais%20são%20seus%20maiores%20concorrentes?%0D%0A%0D%0A" +
       this.state.sete +
-      "%0D%0A%0D%0AQual%20a%20idade%20do%20seu%20público" +
+      "%0D%0A%0D%0A%0D%0AQual%20a%20idade%20do%20seu%20público?%0D%0A%0D%0A" +
       this.state.oito +
-      "%0D%0A%0D%0AQue%20mensagem%20você%20quer%20passar%20com%20a%20sua%20marca" +
+      "%0D%0A%0D%0A%0D%0AQue%20mensagem%20você%20quer%20passar%20com%20a%20sua%20marca?%0D%0A%0D%0A" +
       this.state.nove +
-      "%0D%0A%0D%0AComo%20você%20descreveria%20sua%20marca%20em%20três%20palavras" +
+      "%0D%0A%0D%0A%0D%0AComo%20você%20descreveria%20sua%20marca%20em%20três%20palavras?%0D%0A%0D%0A" +
       this.state.dez +
-      "%0D%0A%0D%0ASe%20você%20tem%20exemplos%20de%20logos%20que%20goste,%20me%20envie%20no%20whatsapp." +
+      "%0D%0A%0D%0A%0D%0ASe%20você%20tem%20exemplos%20de%20logos%20que%20goste,%20me%20envie%20no%20whatsapp.%0D%0A%0D%0A" +
       this.state.onze +
-      "%0D%0A%0D%0AVocê%20tem%20website,%20se%20sim%20qual?" +
+      "%0D%0A%0D%0A%0D%0AVocê%20tem%20website,%20se%20sim%20qual?%0D%0A%0D%0A" +
       this.state.doze +
-      "%0D%0A%0D%0AVocê%20tem%20fontes%20que%20gosta,%20se%20sim%20quais?" +
+      "%0D%0A%0D%0A%0D%0AVocê%20tem%20fontes%20que%20gosta,%20se%20sim%20quais?%0D%0A%0D%0A" +
       this.state.treze +
-      "%0D%0A%0D%0AVocê%20tem%20algum%20moodboard%20(criado%20por%20você,%20ou%20tirado%20do%20Pinterest)%20que%20você%20queira%20me%20mostrar,%20referente%20a%20sua%20marca?" +
+      "%0D%0A%0D%0A%0D%0AVocê%20tem%20algum%20moodboard%20(criado%20por%20você,%20ou%20tirado%20do%20Pinterest)%20que%20você%20queira%20me%20mostrar,%20referente%20a%20sua%20marca%0D%0A%0D%0A?" +
       this.state.quatorze +
-      "%0D%0A%0D%0AAlguma%20outra%20informação%20que%20eu%20me%20esqueci%20de%20citar%20mas%20você%20acha%20importante?" +
+      "%0D%0A%0D%0A%0D%0AAlguma%20outra%20informação%20que%20eu%20me%20esqueci%20de%20citar%20mas%20você%20acha%20importante?%0D%0A%0D%0A" +
       this.state.quinze +
       ".";
     event.preventDefault();
@@ -153,90 +153,105 @@ export default class Form extends Component {
             multiline
             maxRows={6}
             variant="standard"
+            focused
             onChange={this.handleQuestionUmChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Qual o nicho do seu negocio?"
+            label="Qual o nicho do seu negócio?"
             variant="standard"
+            focused
             onChange={this.handleQuestionDoisChange}
             value={this.state.currentText}
           />
           <TextField
             label="Porque você iniciou seu negócio?"
             variant="standard"
+            focused
             onChange={this.handleQuestionTresChange}
             value={this.state.currentText}
           />
           <TextField
             label="Entre em detalhes sobre sua visão sobre o seu branding (Faça desse parágrafo o maior que você pudeeerrr, eu vou ficar muito feliz em ler)"
             variant="standard"
+            focused
             onChange={this.handleQuestionQuatroChange}
             value={this.state.currentText}
           />
           <TextField
             label="Quais cores são indispensáveis para a criação da sua identidade Visual"
             variant="standard"
+            focused
             onChange={this.handleQuestionCincoChange}
             value={this.state.currentText}
           />
           <TextField
             label="Quais cores você não quer de jeito nenhum"
             variant="standard"
+            focused
             onChange={this.handleQuestionSeisChange}
             value={this.state.currentText}
           />
           <TextField
             label="Quais são seus maiores concorrentes"
             variant="standard"
+            focused
             onChange={this.handleQuestionSeteChange}
             value={this.state.currentText}
           />
           <TextField
             label="Qual a idade do seu público"
             variant="standard"
+            focused
             onChange={this.handleQuestionOitoChange}
             value={this.state.currentText}
           />
           <TextField
             label="Que mensagem você quer passar com a sua marca"
             variant="standard"
+            focused
             onChange={this.handleQuestionNoveChange}
             value={this.state.currentText}
           />
           <TextField
             label="Como você descreveria sua marca em três palavras"
             variant="standard"
+            focused
             onChange={this.handleQuestionDezChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Se você tem exemplos de logos que goste, me envie no whatsapp. (Responda: Sim / Não "
+            label="Se você tem exemplos de logos que goste, me envie no whatsapp. (Responda: Sim / Não) "
             variant="standard"
+            focused
             onChange={this.handleQuestionOnzeChange}
             value={this.state.currentText}
           />
           <TextField
             label="Você tem website, se sim qual?"
             variant="standard"
+            focused
             onChange={this.handleQuestionDozeChange}
             value={this.state.currentText}
           />
           <TextField
             label="Você tem fontes que gosta, se sim quais?"
             variant="standard"
+            focused
             onChange={this.handleQuestionTrezeChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Você tem algum moodboard (criado por você, ou tirado do Pinterest) que você queira me mostrar, referente a sua marca?"
+            label="Você tem algum moodboard (criado por você, ou tirado do Pinterest) que você queira me mostrar, referente a sua marca? Se sim, me envie no whatsapp. (Responda: Sim / Não)"
             variant="standard"
+            focused
             onChange={this.handleQuestionQuatorzeChange}
             value={this.state.currentText}
           />
           <TextField
             label="Alguma outra informação que eu me esqueci de citar mas você acha importante?"
             variant="standard"
+            focused
             onChange={this.handleQuestionQuinzeChange}
             value={this.state.currentText}
           />
