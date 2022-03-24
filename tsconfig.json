@@ -28,7 +28,9 @@
     "**/*.ts",
     "**/*.tsx",
     "src/ui/components/surface/header/Header.jsx",
-    "src/ui/components/data-display/especificElements/haburguerMenu/HamburguerMenu.jsx"
+    "src/ui/components/data-display/especificElements/haburguerMenu/HamburguerMenu.jsx",
+    "src/ui/components/data-display/forms/form.jsx",
+    "src/pages/teste.jsx"
   ],
   "exclude": ["node_modules"]
 }
