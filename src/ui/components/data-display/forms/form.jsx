@@ -12,6 +12,7 @@ const Div = styled("div")`
   > form {
     background-color: ${({ theme }) => theme.palette.primary.light};
     padding-bottom: 3rem;
+    width: 50%;
   }
 
   > form > button {
@@ -196,7 +197,6 @@ export default class Form extends Component {
 
             ":not(style)": {
               m: 1,
-              width: "50%",
               margin: "0 auto",
             },
           }}
