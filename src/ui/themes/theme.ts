@@ -34,7 +34,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ["Lemon/Milk", "Lemon/Milk light", "Quicksand"].join(","),
+    fontFamily: ["Lemon/Milk", "Albra", "Karla", "Quicksand"].join(","),
   },
   shape: {
     borderRadius: "16px",

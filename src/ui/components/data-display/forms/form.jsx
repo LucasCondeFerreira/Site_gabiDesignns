@@ -22,17 +22,35 @@ const Div = styled("div")`
 
   > form > div > label {
     white-space: normal !important;
+    font-family: "Karla";
+  }
+
+  > form > div > div {
+    font-family: "Karla";
+  }
+
+  @media (min-width: 1025px) and (max-width: 1310px) {
+    > form {
+      width: 65%;
+    }
   }
 
   @media (min-width: 481px) and (max-width: 1024px) {
     > form > div > div {
       margin-top: 2.5rem;
     }
+
+    > form {
+      width: 80%;
+    }
   }
 
   @media (min-width: 1px) and (max-width: 480px) {
     > form > div > div {
       margin-top: 4rem;
+    }
+    > form {
+      width: 80%;
     }
   }
 `;
@@ -178,7 +196,7 @@ export default class Form extends Component {
 
             ":not(style)": {
               m: 1,
-              width: "80%",
+              width: "50%",
               margin: "0 auto",
             },
           }}

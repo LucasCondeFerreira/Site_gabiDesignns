@@ -27,6 +27,14 @@ p {
   font-family: "Quicksand";
   src: url(/fonts/Quicksand-Medium.ttf);
 }
+@font-face {
+  font-family: "Albra";
+  src: url(/fonts/Albra-Light.otf);
+}
+@font-face {
+  font-family: "Karla";
+  src: url(/fonts/Karla-Regular.ttf);
+}
 
 a {
   color: inherit;

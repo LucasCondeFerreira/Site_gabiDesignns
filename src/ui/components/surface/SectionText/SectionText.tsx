@@ -921,8 +921,12 @@ const DivText10 = styled("div")`
   background-repeat: no-repeat;
 
   > span > h1 {
+    font-size: 9em;
+    font-weight: 400;
     text-align: center;
+    text-transform: capitalize;
     color: ${({ theme }) => theme.palette.primary.main};
+    font-family: "Albra";
   }
 
   > span > h4 {
@@ -931,13 +935,13 @@ const DivText10 = styled("div")`
 
   @media (min-width: 481px) and (max-width: 1160px) {
     > span > h1 {
-      font-size: 5em;
+      font-size: 7em;
     }
   }
 
   @media (max-width: 480px) {
     > span > h1 {
-      font-size: 2.8em;
+      font-size: 5em;
     }
     > span > h4 {
       font-size: 0.9em;
@@ -956,7 +960,7 @@ const FundoImage = styled("div")`
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
 
-  background-image: url(/images/StickerPack.png);
+  background-image: url(/images/image-briefing.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -973,10 +977,12 @@ const ContainTexto = styled("div")`
   max-width: 920px;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+
   > p {
-    text-align: center;
+    font-family: "Karla";
     font-size: 1.5em;
     line-height: 2em !important;
+    text-align: center;
     margin-top: 0;
     padding: 0.8rem 0;
   }

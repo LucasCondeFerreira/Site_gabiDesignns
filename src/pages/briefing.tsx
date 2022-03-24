@@ -8,7 +8,6 @@ const Briefing: NextPage = () => {
   return (
     <div>
       <Range />
-      <Header />
       <SectionTextoDez />
       <Form />
     </div>
