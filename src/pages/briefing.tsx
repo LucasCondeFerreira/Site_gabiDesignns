@@ -1,10 +1,7 @@
 import type { NextPage } from "next";
 import Range from "@components/esthetic/range/Range";
 import Header from "@components/surface/header/Header.jsx";
-import {
-  SectionTextoSeis,
-  SectionTextoSete,
-} from "@components/surface/SectionText/SectionText";
+import { SectionTextoDez } from "@components/surface/SectionText/SectionText";
 import Form from "@components/data-display/forms/form.jsx";
 
 const Briefing: NextPage = () => {
@@ -12,7 +9,7 @@ const Briefing: NextPage = () => {
     <div>
       <Range />
       <Header />
-      <SectionTextoSeis />
+      <SectionTextoDez />
       <Form />
     </div>
   );

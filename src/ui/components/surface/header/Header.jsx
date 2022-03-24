@@ -33,14 +33,14 @@ const Nav = styled("nav")`
   width: 59%;
   display: flex;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     justify-content: flex-end;
 
     > ul.sumir {
       display: none;
     }
   }
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     > ul.list {
       display: none;
     }
@@ -63,7 +63,7 @@ const Ul = styled("ul")`
 
   gap: 28px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     > li {
       margin: 0 auto;
     }
@@ -95,7 +95,7 @@ const A = styled("a")`
 const DivHamburguer = styled("div")`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     display: fixed;
     margin-left: 10px;
     z-index: 10;
@@ -155,7 +155,7 @@ export default function Header() {
             
             z-index: 9;
           }
-            @media (max-width: 768px) {
+            @media (max-width: 1023px) {
               .sumir{
                 display:none;
               }

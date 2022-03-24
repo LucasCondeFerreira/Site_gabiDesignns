@@ -58,7 +58,7 @@ export default function Hamburguer({ isOpen }) {
             transform: ${isOpen ? "rotate(-45deg)" : "rotate(0)"};
             transition: all 0.3s linear;
           }
-          @media (max-width: 768px){
+          @media (max-width: 1023px){
           .list {
 
             flex-flow: column nowrap;

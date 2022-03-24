@@ -4,6 +4,7 @@ import {
   H1White,
   H2White,
   H2Black,
+  H4Black,
 } from "@components/data-display/text/Tittle";
 import {
   ParagraphWhite,
@@ -261,6 +262,12 @@ const DivText4 = styled("div")`
   border-bottom: 8rem ${({ theme }) => theme.palette.secondary.main} solid;
   background-size: contain;
 
+  @media (min-width: 769px) and (max-width: 1160px) {
+    > span > h1 {
+      font-size: 4.4em;
+    }
+  }
+
   @media (max-width: 768px) {
     padding-top: 12rem;
     padding-bottom: 10rem;
@@ -475,10 +482,13 @@ const DivText6 = styled("div")`
     color: ${({ theme }) => theme.palette.primary.main};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1160px) {
     > span > h1 {
       font-size: 2.8em;
     }
+  }
+
+  @media (max-width: 768px) {
     padding: 9rem 3rem;
   }
 `;
@@ -833,12 +843,15 @@ const DivText9 = styled("div")`
     color: ${({ theme }) => theme.palette.primary.main} !important;
   }
 
+  @media (min-width: 769px) and (max-width: 1160px) {
+    > span > h1 {
+      font-size: 4.4em;
+    }
+  }
+
   @media (max-width: 768px) {
     padding-top: 13rem;
     padding-bottom: 10rem;
-    > span > h1 {
-      font-size: 2.3em;
-    }
   }
 
   @media (min-width: 701px) and (max-width: 768px) {
@@ -888,5 +901,129 @@ export const SectionTextoNove = () => {
         text={"COMPRE AGORA"}
       />
     </DivText9>
+  );
+};
+
+// SectionTextoDez Style
+
+const DivText10 = styled("div")`
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+  padding-top: 14rem;
+  padding-bottom: 6rem;
+
+  background-color: ${({ theme }) => theme.palette.primary.light};
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  > span > h1 {
+    text-align: center;
+    color: ${({ theme }) => theme.palette.primary.main};
+  }
+
+  > span > h4 {
+    text-align: center;
+  }
+
+  @media (min-width: 481px) and (max-width: 1160px) {
+    > span > h1 {
+      font-size: 5em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    > span > h1 {
+      font-size: 2.8em;
+    }
+    > span > h4 {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 9rem 0rem;
+  }
+`;
+
+const FundoImage = styled("div")`
+  width: 100%;
+  margin-top: 3rem;
+  padding: 60px 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+
+  background-image: url(/images/StickerPack.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  > div {
+    width: 100%;
+    background-color: ${({ theme }) => theme.palette.primary.main};
+  }
+`;
+
+const ContainTexto = styled("div")`
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 920px;
+  max-width: 920px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  > p {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 2em !important;
+    margin-top: 0;
+    padding: 0.8rem 0;
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3rem;
+    > p {
+      line-height: 1.25em !important;
+      font-size: 1.4em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 2.2rem;
+    width: 100%;
+    max-width: 100%;
+    > p {
+      line-height: 1.15em !important;
+      font-size: 1.1em;
+    }
+  }
+`;
+
+export const SectionTextoDez = () => {
+  return (
+    <>
+      <DivText10>
+        <H4Black>RESPONDA AQUi O NOSSO</H4Black>
+        <H1White>Briefing</H1White>
+        <FundoImage>
+          <div>
+            <ContainTexto>
+              <ParagraphWhite>
+                Antes de preencher este formulário de consulta, é vital que você
+                tenha uma visão para sua marca e tenha uma vibe definida que
+                deseja. Por favor, responda a todas as perguntas com o máximo de
+                detalhes possível, pois é extremamente importante que eu possa
+                ter uma ideia de você como pessoa e sua marca. Quanto mais
+                detalhes melhor, pois isso me mostra que você sabe o que quer, e
+                todos nós adoramos detalhes.
+              </ParagraphWhite>
+            </ContainTexto>
+          </div>
+        </FundoImage>
+      </DivText10>
+    </>
   );
 };

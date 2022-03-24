@@ -3,11 +3,38 @@ import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { Input } from "@mui/material";
 
 const Div = styled("div")`
   width: 100%;
   margin: 0 auto;
+  background-color: ${({ theme }) => theme.palette.primary.light};
+
+  > form {
+    background-color: ${({ theme }) => theme.palette.primary.light};
+    padding-bottom: 3rem;
+  }
+
+  > form > button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  > form > div > label {
+    white-space: normal !important;
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    > form > div > div {
+      margin-top: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1px) and (max-width: 480px) {
+    > form > div > div {
+      margin-top: 4rem;
+    }
+  }
 `;
 
 export default class Form extends Component {
@@ -80,7 +107,7 @@ export default class Form extends Component {
       this.state.doze +
       "%0D%0A%0D%0A%0D%0AVocê%20tem%20fontes%20que%20gosta,%20se%20sim%20quais?%0D%0A%0D%0A" +
       this.state.treze +
-      "%0D%0A%0D%0A%0D%0AVocê%20tem%20algum%20moodboard%20(criado%20por%20você,%20ou%20tirado%20do%20Pinterest)%20que%20você%20queira%20me%20mostrar,%20referente%20a%20sua%20marca%0D%0A%0D%0A?" +
+      "%0D%0A%0D%0A%0D%0AVocê%20tem%20algum%20moodboard?%0D%0A%0D%0A" +
       this.state.quatorze +
       "%0D%0A%0D%0A%0D%0AAlguma%20outra%20informação%20que%20eu%20me%20esqueci%20de%20citar%20mas%20você%20acha%20importante?%0D%0A%0D%0A" +
       this.state.quinze +
@@ -142,121 +169,133 @@ export default class Form extends Component {
           component="form"
           onSubmit={this.handleSubmit}
           sx={{
-            "& > :not(style)": { m: 1, margin: "1.5rem 0", width: "100%" },
-            ":not(style)": { m: 1, width: "80%", margin: "0 auto" },
+            "& > :not(style)": {
+              m: 1,
+              margin: "1.5rem auto",
+              width: "100%",
+              whiteSpace: "none",
+            },
+
+            ":not(style)": {
+              m: 1,
+              width: "80%",
+              margin: "0 auto",
+            },
           }}
           noValidate
           autoComplete="off"
         >
           <TextField
-            label="Qual o nome do seu negócio?"
-            multiline
-            maxRows={6}
+            label={"Qual o nome do seu negócio?"}
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionUmChange}
             value={this.state.currentText}
           />
           <TextField
             label="Qual o nicho do seu negócio?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionDoisChange}
             value={this.state.currentText}
           />
           <TextField
             label="Porque você iniciou seu negócio?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionTresChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Entre em detalhes sobre sua visão sobre o seu branding (Faça desse parágrafo o maior que você pudeeerrr, eu vou ficar muito feliz em ler)"
+            label="Entre em detalhes sobre sua visão sobre o seu branding:"
             variant="standard"
-            focused
+            required
+            multiline
+            maxRows={8}
             onChange={this.handleQuestionQuatroChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Quais cores são indispensáveis para a criação da sua identidade Visual"
+            label="Quais cores são indispensáveis na sua identidade Visual?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionCincoChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Quais cores você não quer de jeito nenhum"
+            label="Quais cores você não quer de jeito nenhum?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionSeisChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Quais são seus maiores concorrentes"
+            label="Quais são seus maiores concorrentes?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionSeteChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Qual a idade do seu público"
+            label="Qual a idade do seu público?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionOitoChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Que mensagem você quer passar com a sua marca"
+            label="Que mensagem você quer passar com a sua marca?"
             variant="standard"
-            focused
+            required
+            multiline
+            maxRows={8}
             onChange={this.handleQuestionNoveChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Como você descreveria sua marca em três palavras"
+            label="Como você descreveria sua marca em três palavras?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionDezChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Se você tem exemplos de logos que goste, me envie no whatsapp. (Responda: Sim / Não) "
+            label="Se você tem exemplos de logos que goste, me envie no whatsapp. (Responda: Sim / Não)"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionOnzeChange}
             value={this.state.currentText}
           />
           <TextField
             label="Você tem website, se sim qual?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionDozeChange}
             value={this.state.currentText}
           />
           <TextField
             label="Você tem fontes que gosta, se sim quais?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionTrezeChange}
             value={this.state.currentText}
           />
           <TextField
-            label="Você tem algum moodboard (criado por você, ou tirado do Pinterest) que você queira me mostrar, referente a sua marca? Se sim, me envie no whatsapp. (Responda: Sim / Não)"
+            label="Você tem algum moodboard. Se sim, me envie no whatsapp. (Responda: Sim / Não)"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionQuatorzeChange}
             value={this.state.currentText}
           />
           <TextField
             label="Alguma outra informação que eu me esqueci de citar mas você acha importante?"
             variant="standard"
-            focused
+            required
             onChange={this.handleQuestionQuinzeChange}
             value={this.state.currentText}
           />
           <Button type="submit" value="Send" variant="outlined">
-            Clique aqui
+            Envia Briefing
           </Button>
         </Box>
       </Div>
