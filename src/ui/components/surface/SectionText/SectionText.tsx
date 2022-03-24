@@ -935,12 +935,14 @@ const DivText10 = styled("div")`
 
   @media (min-width: 481px) and (max-width: 1160px) {
     > span > h1 {
+      font-family: "Albra";
       font-size: 7em;
     }
   }
 
   @media (max-width: 480px) {
     > span > h1 {
+      font-family: "Albra";
       font-size: 5em;
     }
     > span > h4 {
