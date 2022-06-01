@@ -217,7 +217,7 @@ export const SectionPrice = () => {
           </DivList>
           <ButtonUm
             href="https://api.whatsapp.com/send?phone=5551990186409&text=Ol%C3%A1%20Gabi.%20%F0%9F%A7%A1.%20Me%20interessei%20pelo%20pacote%20STARTUP%2C%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%3A%20(*INSIRA%20AQUI%20o%20que%20gostaria%20de%20saber*)"
-            text={"R$169,00"}
+            text={"R$115,00"}
           />
         </DivText2>
         <DivImgUm />
@@ -253,7 +253,7 @@ export const SectionPrice = () => {
           </DivList>
           <ButtonUm
             href="https://api.whatsapp.com/send?phone=5551990186409&text=Ol%C3%A1%20Gabi.%20%F0%9F%A7%A1.%20Me%20interessei%20pelo%20pacote%20MICROEMPRESA%2C%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%3A%20(*INSIRA%20AQUI%20o%20que%20gostaria%20de%20saber*)"
-            text={"R$358,00"}
+            text={"R$230,00"}
           />
         </DivText2>
         <DivImgDois />
@@ -294,7 +294,7 @@ export const SectionPrice = () => {
           </DivList>
           <ButtonUm
             href="https://api.whatsapp.com/send?phone=5551990186409&text=Ol%C3%A1%20Gabi.%20%F0%9F%A7%A1.%20Me%20interessei%20pelo%20pacote%20ENTERPRISE%2C%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%3A%20(*INSIRA%20AQUI%20o%20que%20gostaria%20de%20saber*)"
-            text={"R$589,00"}
+            text={"R$328,00"}
           />
         </DivText2>
         <DivImgTres />
